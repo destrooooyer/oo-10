@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>readme</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #abb2bf;
+}
+.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.comment .markup.link {
+  color: #5c6370;
+}
+.entity.name.type {
+  color: #e5c07b;
+}
+.entity.other.inherited-class {
+  color: #98c379;
+}
+.keyword {
+  color: #c678dd;
+}
+.keyword.control {
+  color: #c678dd;
+}
+.keyword.operator {
+  color: #abb2bf;
+}
+.keyword.other.special-method {
+  color: #61afef;
+}
+.keyword.other.unit {
+  color: #d19a66;
+}
+.storage {
+  color: #c678dd;
+}
+.storage.type.annotation,
+.storage.type.primitive {
+  color: #c678dd;
+}
+.storage.modifier.package,
+.storage.modifier.import {
+  color: #abb2bf;
+}
+.constant {
+  color: #d19a66;
+}
+.constant.variable {
+  color: #d19a66;
+}
+.constant.character.escape {
+  color: #56b6c2;
+}
+.constant.numeric {
+  color: #d19a66;
+}
+.constant.other.color {
+  color: #56b6c2;
+}
+.constant.other.symbol {
+  color: #56b6c2;
+}
+.variable {
+  color: #e06c75;
+}
+.variable.interpolation {
+  color: #be5046;
+}
+.variable.parameter {
+  color: #abb2bf;
+}
+.string {
+  color: #98c379;
+}
+.string.regexp {
+  color: #56b6c2;
+}
+.string.regexp .source.ruby.embedded {
+  color: #e5c07b;
+}
+.string.other.link {
+  color: #e06c75;
+}
+.punctuation.definition.comment {
+  color: #5c6370;
+}
+.punctuation.definition.method-parameters,
+.punctuation.definition.function-parameters,
+.punctuation.definition.parameters,
+.punctuation.definition.separator,
+.punctuation.definition.seperator,
+.punctuation.definition.array {
+  color: #abb2bf;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #61afef;
+}
+.punctuation.definition.bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #be5046;
+}
+.punctuation.section.method,
+.punctuation.section.class,
+.punctuation.section.inner-class {
+  color: #abb2bf;
+}
+.support.class {
+  color: #e5c07b;
+}
+.support.type {
+  color: #56b6c2;
+}
+.support.function {
+  color: #56b6c2;
+}
+.support.function.any-method {
+  color: #61afef;
+}
+.entity.name.function {
+  color: #61afef;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #e5c07b;
+}
+.entity.name.section {
+  color: #61afef;
+}
+.entity.name.tag {
+  color: #e06c75;
+}
+.entity.other.attribute-name {
+  color: #d19a66;
+}
+.entity.other.attribute-name.id {
+  color: #61afef;
+}
+.meta.class {
+  color: #e5c07b;
+}
+.meta.class.body {
+  color: #abb2bf;
+}
+.meta.method-call,
+.meta.method {
+  color: #abb2bf;
+}
+.meta.definition.variable {
+  color: #e06c75;
+}
+.meta.link {
+  color: #d19a66;
+}
+.meta.require {
+  color: #61afef;
+}
+.meta.selector {
+  color: #c678dd;
+}
+.meta.separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.meta.tag {
+  color: #abb2bf;
+}
+.underline {
+  text-decoration: underline;
+}
+.none {
+  color: #abb2bf;
+}
+.invalid.deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.invalid.illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important;
+}
+.markup.bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #c678dd;
+}
+.markup.deleted {
+  color: #e06c75;
+}
+.markup.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.markup.heading {
+  color: #e06c75;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #61afef;
+}
+.markup.link {
+  color: #c678dd;
+}
+.markup.inserted {
+  color: #98c379;
+}
+.markup.quote {
+  color: #d19a66;
+}
+.markup.raw {
+  color: #98c379;
+}
+.source.cs .keyword.operator {
+  color: #c678dd;
+}
+.source.css .property-name,
+.source.css .property-value {
+  color: #828997;
+}
+.source.css .property-name.support,
+.source.css .property-value.support {
+  color: #abb2bf;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .link .entity {
+  color: #61afef;
+}
+.source.ini .keyword.other.definition.ini {
+  color: #e06c75;
+}
+.source.java .storage.modifier.import {
+  color: #e5c07b;
+}
+.source.java .storage.type {
+  color: #e5c07b;
+}
+.source.java-properties .meta.key-pair {
+  color: #e06c75;
+}
+.source.java-properties .meta.key-pair > .punctuation {
+  color: #abb2bf;
+}
+.source.js .keyword.operator {
+  color: #56b6c2;
+}
+.source.js .keyword.operator.delete,
+.source.js .keyword.operator.in,
+.source.js .keyword.operator.of,
+.source.js .keyword.operator.instanceof,
+.source.js .keyword.operator.new,
+.source.js .keyword.operator.typeof,
+.source.js .keyword.operator.void {
+  color: #c678dd;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+  color: #98c379;
+}
+.source.json .meta.structure.dictionary.json > .constant.language.json,
+.source.json .meta.structure.array.json > .constant.language.json {
+  color: #56b6c2;
+}
+.source.ruby .constant.other.symbol > .punctuation {
+  color: inherit;
+}
+.source.python .keyword.operator.logical.python {
+  color: #c678dd;
+}
+.source.python .variable.parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="readme">readme</h1>
+<h3 id="-">目录</h3>
+<ul>
+<li><a href="#new3">第10次作业新增内容（最新）</a><ul>
+<li><a href="#&#x8BBE;&#x8BA1;&#x6587;&#x6863;&#x66F4;&#x65B0;">设计文档更新</a></li>
+<li><a href="#&#x65B0;&#x589E;&#x51FA;&#x79DF;&#x8F66;&#x7C7B;&#x578B;">新增出租车类型</a></li>
+<li><a href="#&#x65B0;&#x589E;&#x6D4B;&#x8BD5;&#x63A5;&#x53E3;2">新增测试接口</a></li>
+</ul>
+</li>
+<li><a href="#new2">第9次作业新增内容</a><ul>
+<li><a href="#bug&#x4FEE;&#x6539;&#x8BF4;&#x660E;">bug修改说明</a></li>
+<li><a href="#&#x8BBE;&#x8BA1;&#x6587;&#x6863;">设计文档</a></li>
+<li><a href="#&#x9053;&#x8DEF;&#x4EA4;&#x53C9;&#x65B9;&#x5F0F;&#x7684;&#x8F93;&#x5165;">道路交叉方式的输入</a></li>
+</ul>
+</li>
+<li><a href="#new">新增内容（第8次作业）</a><ul>
+<li><a href="#&#x65B0;&#x589E;&#x6D4B;&#x8BD5;&#x63A5;&#x53E3;">新增测试接口</a></li>
+<li><a href="#&#x8FC7;&#x7A0B;&#x89C4;&#x683C;">过程规格</a></li>
+</ul>
+</li>
+<li><a href="#last">上次内容（第7次作业）</a><ul>
+<li><a href="#&#x8F93;&#x5165;">输入</a></li>
+<li><a href="#&#x672C;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x7684;&#x6D4B;&#x8BD5;&#x63A5;&#x53E3;">本程序提供的测试接口</a></li>
+<li><a href="#&#x6D4B;&#x8BD5;">测试</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p><h3 id="new3">第10次作业新增内容（最新）</h3>
+请<strong><em>务必</em></strong>先按顺序阅读<a href="#last">第7次内容（点击跳转）</a>，<a href="#new">第8次内容（点击跳转）</a>和<a href="#new2">第9次内容（点击跳转）</a>再阅读<a href="#new3">本次内容</a></p>
+</blockquote>
+<h3 id="&#x8BBE;&#x8BA1;&#x6587;&#x6863;&#x66F4;&#x65B0;">设计文档更新</h3>
+
+<p>设计文档新增了以下内容：</p>
+<ul>
+<li><code>pos</code> 类</li>
+<li><code>car_mofa</code> 类</li>
+<li><code>path</code> 类</li>
+</ul>
+<h3 id="&#x65B0;&#x589E;&#x51FA;&#x79DF;&#x8F66;&#x7C7B;&#x578B;">新增出租车类型</h3>
+
+<p>现在100辆出租车中，序号在[0,29]范围内的为新型出租车，序号在[30,99]范围内的为旧出租车，测试的时候请注意</p>
+<h3 id="&#x65B0;&#x589E;&#x6D4B;&#x8BD5;&#x63A5;&#x53E3;2">新增测试接口</h3>
+
+<ul>
+<li><code>_disp.watcher.get_ser_count(int x)</code><ul>
+<li>作用：返回x号出租车（新型出租车）完成的请求数量</li>
+<li>x 的取值范围为[0,29]</li>
+<li>返回类型：int</li>
+</ul>
+</li>
+<li><code>_disp.watcher.get_path(int x,int y)</code><ul>
+<li>作用：返回x号出租车（新型出租车）第y次完成请求时经过的路径的迭代器</li>
+<li>x的取值范围为[0,29]</li>
+<li>y的取值范围为[0,get_ser_count(x)]</li>
+<li>返回类型：Iterator</li>
+<li>注意：<ul>
+<li>返回的路径为出租车从乘客位置到目的地的路径，如果因等红灯而停住则会包含多个连续的相同坐标。如果在请求尚未完成的时候调用该函数，返回的是不完整的路径（当前已经经过的路径）</li>
+<li>虽然红灯经过300ms就会变绿，但出租车是有可能在一个点等超过300ms红灯的，现介绍其中两种情况：<ul>
+<li>1.出租车到达某点的时候向右是绿的，100ms后将要向右移动的时候，向右恰好变红，又要等300ms</li>
+<li>2.出租车要从A点到B点，有两条最短路径，一条向上，一条向右。一开始向右行红灯，但向右的流量小，因此出租车选择向右的路径，等红灯。等路灯变为向右绿，向上红的时候，恰好流量变为向上走的流量小于向右走，这时出租车又会选择向上走的路线，第二次等红灯。因此理论上出租车可能在一个点等任意长时间的红灯，测试时请您注意。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>关于新增测试接口的使用姿势：先调用<code>_disp.watcher.get_ser_count(int x)</code>获取x号出租车的完成的请求数，再调用<code>_disp.watcher.get_path(int x,int y)</code>获得相应的该出租车某次完成请求经过路径的迭代器iter，之后在iter的hasNext为true的前提下调用iter的next方法，则会返回一个Object类型的对象temp，将temp转化为pos类型的对象之后，调用temp的get_x()和get_y()就可以获得路径中的一个坐标啦~具体使用方法在<code>test_thread</code>类里面有示例代码可供参考</li>
+</ul>
+<hr>
+<blockquote>
+<p><h3 id="new2">第9次作业新增内容</h3>
+请<strong><em>务必</em></strong>先按顺序阅读<a href="#last">第7次内容（点击跳转）</a>和<a href="#new">第8次内容（点击跳转）</a>再阅读<a href="#new2">本次内容</a></p>
+</blockquote>
+<h3 id="bug&#x4FEE;&#x6539;&#x8BF4;&#x660E;">bug修改说明</h3>
+
+<p>上次作业，使用了javafx.util.Pair，我用的idea，没有问题，但那哥们用的eclipse说编译不了，其实把jre移除再重新添加就好了，但还是被他扣了一波，我也懒得向课代表申诉了，这次把所有用到的Pair都移除了</p>
+<h3 id="&#x8BBE;&#x8BA1;&#x6587;&#x6863;">设计文档</h3>
+
+<ul>
+<li>详见设计文档</li>
+<li>包含以下内容：<ul>
+<li>overview</li>
+<li>表示对象</li>
+<li>抽象函数</li>
+<li>不变式</li>
+</ul>
+</li>
+<li>过程规格在代码中每个方法前的注释中</li>
+</ul>
+<h3 id="&#x9053;&#x8DEF;&#x4EA4;&#x53C9;&#x65B9;&#x5F0F;&#x7684;&#x8F93;&#x5165;">道路交叉方式的输入</h3>
+
+<ul>
+<li>与前两次作业相比，增加了道路交叉方式的输入，在输入完地图之后，会在控制台输出<em> &quot;请输入道路交叉方式信息所在的文件的绝对路径&quot; </em>，此时请由<strong><em>控制台</em></strong>输入文件的<strong><em>绝对路径</em></strong>。如<code>F:\temp\新建文本文档.txt</code></li>
+<li>为保留原有地图的输入方法，程序应单独增加一文件输入，定义道路交叉情况。 文件内容为 80 行字符串，每行有 80 个字符，每个字符为 0 或 1。 0 表示立体交叉， 1 表示平面交叉。理论上，两者的数量应该各占一半。 该文件与地图文件一样， <strong><em>由测试者</em></strong>保证输入文件的有效性。 交叉方式与结点的邻接关系无关，并不是十字路口才能设置立体交叉，直道也允许拥有立体交叉属性。（摘自基本法）</li>
+<li>程序运行开始，先输入地图所在文件，再输入道路交叉方式信息所在文件</li>
+</ul>
+<blockquote>
+<p><a href="#new3">继续阅读第10次新增内容（点击跳转）</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p><h3 id="new">第8次作业新增内容</h3>
+请<strong><em>务必</em></strong>先仔细阅读<a href="#last">上次内容（点击跳转）</a>再阅读<a href="#new">本次作业新增内容</a></p>
+</blockquote>
+<h3 id="&#x65B0;&#x589E;&#x6D4B;&#x8BD5;&#x63A5;&#x53E3;">新增测试接口</h3>
+
+<ul>
+<li><code>_disp.open_edge(int x,int y,String direct)</code><ul>
+<li>作用：打开已有的边，边的位置是与坐标(x,y)相连的上、下、左、右四条中的一个，由参数direct决定</li>
+<li>x, y 的取值范围为[0,79]</li>
+<li>direct 可以取的值如下：<ul>
+<li><code>up</code>：表明创建的边连接坐标(x,y)与其上方的点(x-1,y)</li>
+<li><code>down</code>：表明创建的边连接坐标(x,y)与其下方的点(x+1,y)</li>
+<li><code>left</code>：表明创建的边连接坐标(x,y)与其左边的点(x,y-1)</li>
+<li><code>right</code>：表明创建的边连接坐标(x,y)与其右边的点(x,y-1)</li>
+</ul>
+</li>
+<li>返回类型：void</li>
+<li>注意事项：<ul>
+<li>支持在运行过程中动态关闭或打开一些地图上<strong><em>已有的连接边</em></strong>，受影响边的总数<strong><em>由测试者</em></strong>确保不能超过 5，任意时刻需要<strong><em>由测试者</em></strong>确保地图上的<strong><em>所有的点都是连通</em></strong>的。（摘自基本法）</li>
+<li>对上一条注意事项中<strong><em>“已有的连接边”</em></strong> 的理解：即打开的边必须为地图文件信息中存在的边，也就是说，不能创建边，只能打开关闭的边。</li>
+<li>另外值得注意的是：坐标(x,y)中x代表行号，而y代表列号，因此(x,y)的上方是(x-1,y)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>_disp.close_edge(int x,int y,String direct)</code><ul>
+<li>作用：关闭已有的边，边的位置是与坐标(x,y)相连的上、下、左、右四条中的一个，由参数direct决定</li>
+<li>x, y 的取值范围为[0,79]</li>
+<li>direct 可以取的值如下：<ul>
+<li><code>up</code>：表明消除连接坐标(x,y)与其上方的点(x-1,y)的边</li>
+<li><code>down</code>：表明消除连接坐标(x,y)与其下方的点(x+1,y)的边</li>
+<li><code>left</code>：表明消除连接坐标(x,y)与其左边的点(x,y-1)的边</li>
+<li><code>right</code>：表明消除连接坐标(x,y)与其右边的点(x,y-1)的边</li>
+</ul>
+</li>
+<li>返回类型：void</li>
+<li>注意事项：同<code>_disp.open_edge(int x,int y,String direct)</code>中注意事项</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x8FC7;&#x7A0B;&#x89C4;&#x683C;">过程规格</h3>
+
+<ul>
+<li>在每个方法前的注释中</li>
+<li>包括三项内容：<ul>
+<li>requires: 定义了过程对输入的约束要求。</li>
+<li>modifies: 过程在执行过程中对Input的修改。</li>
+<li>effects: 定义了过程在所有未被Requires排除的输入下给出的执行效果。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><a href="#new2">继续阅读第9次新增内容（点击跳转）</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<h3 id="last">第7次作业内容</h3>
+
+</blockquote>
+<h3 id="&#x8F93;&#x5165;">输入</h3>
+
+<ul>
+<li>城市地图通过文件输入，文件格式为文本文件。文件内容为 80 行字符串，
+每行有 80 个字符，每个字符为 0 到 3 之间的整数。（摘自基本法）</li>
+<li>文件需要<strong><em>由测试者</em></strong>确保地图上的所有的点都是连通的，即整个图是连通图，
+但不能存在点与图外的点有连接，例如 (80,1) 不能是 2 或 3，(80,80) 只能是 0。（摘自基本法）</li>
+<li>程序开始运行后，会在控制台输出 <em>&quot;请输入地图数据所在的文件的绝对路径&quot;</em> ，此时请在<strong><em>控制台</em></strong>中输入包含地图数据的文件的<strong><em>绝对路径</em></strong>,如<code>F:\temp\新建文本文档.txt</code></li>
+</ul>
+<h3 id="&#x672C;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x7684;&#x6D4B;&#x8BD5;&#x63A5;&#x53E3;">本程序提供的测试接口</h3>
+
+<ul>
+<li><code>_disp</code>为在<code>main</code>函数中创建的<code>disp类</code>的一个对象。</li>
+<li><p>测试时，请调用<code>_disp</code>的如下方法：</p>
+<ul>
+<li><code>_disp.watcher.get_reputation(int x)</code><ul>
+<li>作用：获取x号出租车的信誉值</li>
+<li>返回类型为int</li>
+<li>x的取值范围为[0,99]</li>
+</ul>
+</li>
+<li><code>_disp.watcher.get_status(int x)</code><ul>
+<li>作用：获得x号出租车的运行状态</li>
+<li>返回类型为String</li>
+<li>x的取值范围为[0,99]</li>
+<li>车运行的状态有如下四种：<ul>
+<li><code>waiting</code>：等待服务</li>
+<li><code>stopped</code>：停止运行</li>
+<li><code>serving</code>：正在服务</li>
+<li><code>to-passenger</code>：即将服务</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>_disp.watcher.get_x(int x)</code><ul>
+<li>作用：获得x号出租车在地图中所处的行号</li>
+<li>返回类型为int</li>
+<li>x的取值范围为[0,99]</li>
+</ul>
+</li>
+<li><code>_disp.watcher.get_y(int x)</code><ul>
+<li>作用：获得x号出租车在地图中所处的列号</li>
+<li>返回类型为int</li>
+<li>x的取值范围为[0,99]</li>
+</ul>
+</li>
+<li><code>_disp.watcher.get_time(int x)</code><ul>
+<li>作用：获得当前时间（当前系统时间-<code>_disp</code>这个对象被创建时的系统时间）</li>
+<li>返回类型为long</li>
+<li>x的取值范围为[0,99]</li>
+</ul>
+</li>
+<li><p><code>_disp.add_request(int x, int y, int dest_x, int dest_y)</code></p>
+<ul>
+<li>作用：添加新的乘客请求（从(x,y)前往(dest_x,dest_y)的请求）</li>
+<li>返回类型为void</li>
+<li>x, y, dest_x, dest_y 的取值范围均为[0,79]</li>
+<li><p>若请求无法响应，则会在控制台输出类似如下内容：</p>
+<blockquote>
+<p>请求  (22,5) =&gt; (43,27) 没有车能够响应</p>
+</blockquote>
+</li>
+<li><p>注意：由于指导书中要求请求队列容量只需不少于300，因此，一旦同时运行的请求数超过300，程序将从控制台输出提示信息。此后，虽然程序继续运行，但不对发生的错误负责</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><em>注意：测试时请一定要调用_disp这个对象的测试接口，而不要创建disp类的其他对象。在main函数作用域以外测试的话需要将_disp作为参数传递过去</em></strong></li>
+</ul>
+<h3 id="&#x6D4B;&#x8BD5;">测试</h3>
+
+<ul>
+<li>工程中已经添加了测试代码的示例以供参考，包括<code>test_thread</code>类以及<code>main</code>函数中46~47行，建好工程直接运行就可以看到测试示例的结果。</li>
+<li>建议直接修改<code>test_thread</code>类的<code>run</code>方法进行测试。（注释掉已有代码，添加新的测试代码）</li>
+<li>当然，要是完全重写测试线程我也是兹词的，但要记得将<code>main</code>函数中46~47行注释掉，在相同位置启动测试线程。注意一定要像示例的测试代码那样先在<code>main</code>函数中将<code>_disp</code>作为参数传给测试线程，再在测试线程中调用<code>_disp</code>的相应方法进行测试，因为很重要所以又说了一遍。</li>
+</ul>
+<blockquote>
+<p><a href="#new">继续阅读第8次新增内容（点击跳转）</a></p>
+</blockquote></body>
+</html>

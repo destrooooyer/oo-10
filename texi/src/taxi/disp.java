@@ -462,18 +462,31 @@ public class disp implements Runnable
 			return false;
 		}
 
+		/**
+		 * requires: x属于[0,29]
+		 * modifies: 返回x号出租车完成的请求数量
+		 * @param x
+		 * @return
+		 */
 		public int get_ser_count(int x)
 		{
-			if(x<30)
-				return ((car_mofa)cars[x]).get_ser_count();
+			if (x < 30)
+				return ((car_mofa) cars[x]).get_ser_count();
 			else
 				return -1;
 		}
 
-		public Iterator get_path(int x,int y)
+		/**
+		 * requires: x属于[0,29],y属于[0,get_ser_count(int x)]
+		 * effects: 返回x号出租车第y次完成请求经过的路径
+		 * @param x
+		 * @param y
+		 * @return
+		 */
+		public Iterator get_path(int x, int y)
 		{
-			if(x<30)
-				return ((car_mofa)cars[x]).get_path(y);
+			if (x < 30)
+				return ((car_mofa) cars[x]).get_path(y);
 			else
 				return null;
 		}

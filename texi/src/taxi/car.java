@@ -145,6 +145,7 @@ public class car
 	/**
 	 * requires: light是0或1
 	 * effects: 调用move，flag为0，表示不能走关闭的路
+	 *
 	 * @param light
 	 * @return
 	 */
@@ -188,7 +189,7 @@ public class car
 							(flag == 1 && this._map.is_up_connected_2(_x, _y)))
 					{
 						bo_temp[0] = true;
-						find_shortest_path(_x - 1, _y, dest_x, dest_y,flag);
+						find_shortest_path(_x - 1, _y, dest_x, dest_y, flag);
 						path_len[0] = path_x.size();
 						if (path_x.size() < min)
 							min = path_x.size();
@@ -197,7 +198,7 @@ public class car
 							(flag == 1 && this._map.is_down_connected_2(_x, _y)))
 					{
 						bo_temp[1] = true;
-						find_shortest_path(_x + 1, _y, dest_x, dest_y,flag);
+						find_shortest_path(_x + 1, _y, dest_x, dest_y, flag);
 						path_len[1] = path_x.size();
 						if (path_x.size() < min)
 							min = path_x.size();
@@ -206,7 +207,7 @@ public class car
 							(flag == 1 && this._map.is_left_connected_2(_x, _y)))
 					{
 						bo_temp[2] = true;
-						find_shortest_path(_x, _y - 1, dest_x, dest_y,flag);
+						find_shortest_path(_x, _y - 1, dest_x, dest_y, flag);
 						path_len[2] = path_x.size();
 						if (path_x.size() < min)
 							min = path_x.size();
@@ -215,7 +216,7 @@ public class car
 							(flag == 1 && this._map.is_right_connected_2(_x, _y)))
 					{
 						bo_temp[3] = true;
-						find_shortest_path(_x, _y + 1, dest_x, dest_y,flag);
+						find_shortest_path(_x, _y + 1, dest_x, dest_y, flag);
 						path_len[3] = path_x.size();
 						if (path_x.size() < min)
 							min = path_x.size();
@@ -381,7 +382,7 @@ public class car
 							(flag == 1 && this._map.is_up_connected_2(_x, _y)))
 					{
 						bo_temp[0] = true;
-						find_shortest_path(_x - 1, _y, passenger_x, passenger_y,flag);
+						find_shortest_path(_x - 1, _y, passenger_x, passenger_y, flag);
 						path_len[0] = path_x.size();
 						if (path_x.size() < min)
 							min = path_x.size();
@@ -390,7 +391,7 @@ public class car
 							(flag == 1 && this._map.is_down_connected_2(_x, _y)))
 					{
 						bo_temp[1] = true;
-						find_shortest_path(_x + 1, _y, passenger_x, passenger_y,flag);
+						find_shortest_path(_x + 1, _y, passenger_x, passenger_y, flag);
 						path_len[1] = path_x.size();
 						if (path_x.size() < min)
 							min = path_x.size();
@@ -399,7 +400,7 @@ public class car
 							(flag == 1 && this._map.is_left_connected_2(_x, _y)))
 					{
 						bo_temp[2] = true;
-						find_shortest_path(_x, _y - 1, passenger_x, passenger_y,flag);
+						find_shortest_path(_x, _y - 1, passenger_x, passenger_y, flag);
 						path_len[2] = path_x.size();
 						if (path_x.size() < min)
 							min = path_x.size();
@@ -408,7 +409,7 @@ public class car
 							(flag == 1 && this._map.is_right_connected_2(_x, _y)))
 					{
 						bo_temp[3] = true;
-						find_shortest_path(_x, _y + 1, passenger_x, passenger_y,flag);
+						find_shortest_path(_x, _y + 1, passenger_x, passenger_y, flag);
 						path_len[3] = path_x.size();
 						if (path_x.size() < min)
 							min = path_x.size();
