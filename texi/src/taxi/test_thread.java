@@ -1,6 +1,6 @@
 package taxi;
 
-import sun.org.mozilla.javascript.internal.ObjToIntMap;
+
 
 import java.util.Iterator;
 import java.util.Random;
@@ -83,7 +83,7 @@ public class test_thread implements Runnable
 				while (iter.hasNext())
 				{
 					pos temp = (pos) iter.next();
-					System.out.println("车号："+i + "\t" + temp.get_x() + "\t" + temp.get_y()+ "\t" + temp.get_z());
+					System.out.println("车号："+i + "\t" + temp.get_x() + "\t" + temp.get_y());
 				}
 			}
 		}

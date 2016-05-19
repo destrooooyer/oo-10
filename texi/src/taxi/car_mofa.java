@@ -10,7 +10,6 @@ public class car_mofa extends car
 {
 	private Vector<Vector<Integer>> x;
 	private Vector<Vector<Integer>> y;
-	private Vector<Vector<Integer>> z;
 	private int flag;
 
 	public Iterator get_path(int x)
@@ -38,8 +37,6 @@ public class car_mofa extends car
 		x.add(new Vector<Integer>());
 		y = new Vector<Vector<Integer>>();
 		y.add(new Vector<Integer>());
-		z = new Vector<Vector<Integer>>();
-		z.add(new Vector<Integer>());
 		this.flag = 0;
 	}
 
@@ -58,7 +55,6 @@ public class car_mofa extends car
 			//System.out.println(x.size());
 			x.get(x.size() - 1).add(this.get_x());
 			y.get(y.size() - 1).add(this.get_y());
-			z.get(z.size() - 1).add(light);
 			this.flag = 1;
 		}
 		else
@@ -68,7 +64,6 @@ public class car_mofa extends car
 				this.flag = 0;
 				x.add(new Vector<Integer>());
 				y.add(new Vector<Integer>());
-				z.add(new Vector<Integer>());
 			}
 		}
 		return move(light, 1);
@@ -81,13 +76,11 @@ public class car_mofa extends car
 
 		Vector<Integer> pos_x;
 		Vector<Integer> pos_y;
-		Vector<Integer> pos_z;
 
 		public path(int p)
 		{
 			this.pos_x = x.get(p);
 			this.pos_y = y.get(p);
-			this.pos_z = z.get(p);
 			this.n = pos_x.size();
 		}
 
@@ -102,7 +95,7 @@ public class car_mofa extends car
 		{
 			if (iter < n)
 			{
-				pos temp = new pos(pos_x.get(iter), pos_y.get(iter),pos_z.get(iter));
+				pos temp = new pos(pos_x.get(iter), pos_y.get(iter));
 				iter++;
 				return temp;
 			}
