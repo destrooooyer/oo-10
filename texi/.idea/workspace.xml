@@ -88,6 +88,7 @@
       <file leaf-file-name="car_mofa.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/taxi/car_mofa.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.88095236">
               <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
               <folding />
             </state>
@@ -167,7 +168,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
+    <option name="x" value="-1929" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
@@ -882,11 +883,13 @@
       <workItem from="1463660834911" duration="10882000" />
       <workItem from="1463672803354" duration="467000" />
       <workItem from="1463674332357" duration="5581000" />
+      <workItem from="1463734966400" duration="230000" />
+      <workItem from="1463758825244" duration="418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-      <workItem from="1463734966400" duration="230000" />
+    <option name="totallyTimeSpent" value="124091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -898,6 +901,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+    <frame x="-1929" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -907,6 +911,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30101466" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2280514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1359,6 +1364,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/taxi/car_mofa.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88095236">
           <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
           <folding />
         </state>

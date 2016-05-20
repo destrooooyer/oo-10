@@ -191,6 +191,7 @@ public class car_mofa extends car
 			if (iter >= 0)
 			{
 				pos temp = new pos(pos_x.get(iter), pos_y.get(iter));
+				iter--;
 				return temp;
 			}
 			else
