@@ -150,6 +150,16 @@ public class car_mofa extends car
 		}
 
 		/**
+		 * effects: 返回iter>=0
+		 *
+		 * @return
+		 */
+		public boolean has_prev()
+		{
+			return iter >= 0;
+		}
+
+		/**
 		 * modifies: this
 		 * effects: 若iter<n则返回new pos(pos_x.get(iter), pos_y.get(iter))
 		 * 否则返回null
@@ -163,6 +173,24 @@ public class car_mofa extends car
 			{
 				pos temp = new pos(pos_x.get(iter), pos_y.get(iter));
 				iter++;
+				return temp;
+			}
+			else
+				return null;
+		}
+
+		/**
+		 * modifies: this
+		 * effects: 若iter<n则返回new pos(pos_x.get(iter), pos_y.get(iter))
+		 * 否则返回null
+		 *
+		 * @return
+		 */
+		public Object prev()
+		{
+			if (iter >= 0)
+			{
+				pos temp = new pos(pos_x.get(iter), pos_y.get(iter));
 				return temp;
 			}
 			else
